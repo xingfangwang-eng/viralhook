@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import * as htmlToImage from 'html-to-image'
 import SolutionsPage from './app/solutions/page'
 import KeywordPage from './app/solutions/[slug]/page'
+import SitemapPage from './app/sitemap/page'
 import Layout from './components/Layout'
 import './App.css'
 
@@ -148,6 +149,15 @@ function Home() {
                     Export WebP
                   </button>
                 </div>
+                <div className="mt-4">
+                  <a 
+                    href="/solutions" 
+                    className="btn w-full px-4 py-2 bg-indigo-500 text-white flex items-center justify-center gap-2 transition-transform active:scale-95"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    Browse All Alternatives
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -177,6 +187,48 @@ function Home() {
           </div>
         </div>
       </main>
+      
+      {/* Quick Access */}
+      <section className="bg-white border-t border-b border-slate-200 py-12 px-6">
+        <div className="container mx-auto">
+          <h2 className="text-sm font-semibold text-slate-500 uppercase mb-6">Quick Access</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              'Simple Canva Alternative',
+              'Minimalist Twitter Cards',
+              'LinkedIn Hook Generator',
+              'Black and White Quote Cards',
+              'Text to Viral Hooks',
+              'Notion Style Quote Cards',
+              'Before vs After Text Cards',
+              'Hootsuite Alternative',
+              'Instagram Hook Generator',
+              'Premium Typography',
+              'Visual Hook Maker',
+              'Contrast Card Generator',
+              'Social Media Fonts',
+              'Blog to Instagram Cards',
+              'Anti-Design Trend Posts'
+            ].map((item, index) => (
+              <a 
+                key={index} 
+                href={`/solutions/${item.toLowerCase().replace(/\s+/g, '-')}`} 
+                className="text-xs text-slate-400 hover:text-indigo-600 transition-colors"
+              >
+                {item}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      {/* Footer */}
+      <footer className="bg-white border-t border-slate-200 py-8 px-6">
+        <div className="container mx-auto text-center">
+          <p className="text-slate-600 mb-2">© 2026 ViralHook. All rights reserved.</p>
+          <p className="text-slate-500 text-sm">Support: 457239850@qq.com</p>
+        </div>
+      </footer>
     </div>
   )
 }
@@ -188,6 +240,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/solutions" element={<SolutionsPage />} />
         <Route path="/solutions/:slug" element={<KeywordPage />} />
+        <Route path="/sitemap" element={<SitemapPage />} />
       </Routes>
     </Layout>
   )

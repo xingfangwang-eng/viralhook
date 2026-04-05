@@ -103,7 +103,7 @@ const SolutionsPage = () => {
               '@type': 'ListItem',
               'position': index + 1,
               'name': item.title,
-              'url': `https://viralhook.com/solutions/${item.slug}`
+              'url': `https://viralhook.wangdadi.xyz/solutions/${item.slug}`
             }))
           })
         }}
@@ -119,6 +119,15 @@ const SolutionsPage = () => {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto my-12 px-6">
+        {/* Breadcrumbs */}
+        <div className="mb-8">
+          <nav className="flex items-center gap-2 text-sm text-slate-500">
+            <a href="/" className="hover:text-indigo-600 transition-colors">Home</a>
+            <span className="text-slate-300">/</span>
+            <span className="text-slate-900 font-medium">Solutions</span>
+          </nav>
+        </div>
+        
         {/* Hero Section */}
         <div className="bg-white border border-slate-200 p-10 mb-12">
           <h1 className="text-5xl md:text-6xl font-black text-slate-900 tracking-tighter mb-6">
@@ -265,7 +274,8 @@ const SolutionsPage = () => {
       {/* Footer */}
       <footer className="bg-white border-t border-slate-200 py-8 px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-slate-600">© 2026 ViralHook. All rights reserved.</p>
+          <p className="text-slate-600 mb-2">© 2026 ViralHook. All rights reserved.</p>
+          <p className="text-slate-500 text-sm">Support: 457239850@qq.com</p>
         </div>
       </footer>
     </div>

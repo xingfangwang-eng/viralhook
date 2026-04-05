@@ -6,7 +6,7 @@ const keywords = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'ke
 
 // 生成 sitemap.xml
 const generateSitemap = () => {
-  const baseUrl = 'https://viralhook.com';
+  const baseUrl = 'https://viralhook.wangdadi.xyz';
   const today = new Date().toISOString().split('T')[0];
 
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -51,7 +51,7 @@ const generateSitemap = () => {
 
 // 生成 robots.txt
 const generateRobots = () => {
-  const baseUrl = 'https://viralhook.com';
+  const baseUrl = 'https://viralhook.wangdadi.xyz';
   const robots = `User-agent: *
 Allow: /
 Allow: /tools/*

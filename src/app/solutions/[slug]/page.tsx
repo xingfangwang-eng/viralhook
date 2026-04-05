@@ -428,19 +428,19 @@ const Page = () => {
                 '@type': 'ListItem',
                 'position': 1,
                 'name': 'Home',
-                'item': 'https://viralhook.com'
+                'item': 'https://viralhook.wangdadi.xyz'
               },
               {
                 '@type': 'ListItem',
                 'position': 2,
                 'name': 'Tools',
-                'item': 'https://viralhook.com/solutions'
+                'item': 'https://viralhook.wangdadi.xyz/solutions'
               },
               {
                 '@type': 'ListItem',
                 'position': 3,
                 'name': title,
-                'item': `https://viralhook.com/solutions/${slug}`
+                'item': `https://viralhook.wangdadi.xyz/solutions/${slug}`
               }
             ]
           })
@@ -820,6 +820,7 @@ const Page = () => {
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-slate-600">Last Updated: {new Date().toLocaleString('default', { month: 'long' })}, 2026</p>
           <p className="text-slate-600 mt-2">© 2026 ViralHook. All rights reserved.</p>
+          <p className="text-slate-500 text-sm mt-2">Support: 457239850@qq.com</p>
         </div>
       </footer>
     </div>

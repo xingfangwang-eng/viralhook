@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Allow: /tools/*
-Sitemap: https://viralhook.com/sitemap.xml
+Sitemap: https://viralhook.wangdadi.xyz/sitemap.xml
