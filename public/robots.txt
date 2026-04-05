@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Allow: /tools/*
+Sitemap: https://viralhook.com/sitemap.xml
