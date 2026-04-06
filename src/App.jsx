@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
-import { Menu, Search, Bell, User, Sparkles, Download } from 'lucide-react'
+import { Menu, Search, Bell, User, Sparkles, Download, ExternalLink } from 'lucide-react'
 import { motion } from 'framer-motion'
 import * as htmlToImage from 'html-to-image'
 import SolutionsPage from './app/solutions/page'

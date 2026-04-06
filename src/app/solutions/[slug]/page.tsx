@@ -553,16 +553,16 @@ const Page = () => {
             {hash % 2 === 0 ? (
               <Hero_A 
                 title={title} 
-                description={problem_description} 
-                backgroundColor={bgColor} 
+                initialInput={title} 
+                bgColor={bgColor} 
                 borderColor={borderColor} 
                 borderRadius={borderRadius} 
               />
             ) : (
               <Hero_B 
                 title={title} 
-                description={problem_description} 
-                backgroundColor={bgColor} 
+                initialInput={title} 
+                bgColor={bgColor} 
                 borderColor={borderColor} 
                 borderRadius={borderRadius} 
               />
